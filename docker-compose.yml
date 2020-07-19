@@ -1,0 +1,48 @@
+version: "3.5"
+services:
+  web:
+    container_name: main_web
+    restart: always
+    networks:
+      - My-valet
+    build: https://github.com/headStyleColorRed/my-valet.git
+    ports:
+      - "80:80"
+
+# L O G I N
+  login-server:
+    container_name: login-server
+    restart: always
+    networks:
+      - My-valet
+    build: https://github.com/headStyleColorRed/my-valet-server-login.git
+    ports:
+      - "8888:8888"
+  login-mongo:
+    container_name: login_DB
+    networks:
+      - My-valet
+    image: mongo
+    ports:
+      - "27017:27017"
+
+# U S E R 
+  user-server:
+    container_name: user-server
+    restart: always
+    networks:
+      - My-valet
+    build: https://github.com/headStyleColorRed/my-valet-server-user.git
+    ports:
+      - "8889:8889"
+  user-mongo:
+    container_name: user_DB
+    networks:
+      - My-valet
+    image: mongo
+    ports:
+      - "27018:27017"
+
+networks:
+  My-valet:
+    name: My-valet
