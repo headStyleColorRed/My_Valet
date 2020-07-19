@@ -1,0 +1,30 @@
+{
+	"screen_login": {
+		"alreadyAMember": "Already a member?",
+		"notAMemberYet": "Not a member yet?",
+		"signIn": "Log in",
+		"signUp": "Sign up",
+		"createAccount": "Create Account",
+		"email": "Email",
+		"username": "Username",
+		"password": "Password",
+		"passwordConfirmation": "Confirm password",
+		"moreThanNCharacters": "At least 8 characters",
+		"termsAndConditionsAgree": "I agree to all the statements included in the ",
+		"termsAndConditionsPage": "terms of service",
+		"signInWithGoogle": "Sign in with Google",
+		"signInWithLinkedin": "Sign in with Linkedin"
+	},
+	"screen_home": {
+		"taken": "Taken",
+		"free": "Free",
+		"occupyParking": "Occupy Parking",
+		"freeParking": "Free Parking",
+		"hello": "Hi there! ",
+		"userHasNoParking1": "Currently you don't have any parking spots registered, you can either ",
+		"userHasNoParking2": "Or add an existing parking Id. Ask your friend to copy it to his clipboard and send it to you :)",
+		"getNewParkingSpot": "Create a parking",
+		"registerExistingParking": "Register new parking"
+
+	}
+}
