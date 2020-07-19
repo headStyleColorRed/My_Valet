@@ -5,7 +5,7 @@ services:
     restart: always
     networks:
       - My-valet
-    build: https://github.com/headStyleColorRed/my-valet.git
+    build: my-valet-web
     ports:
       - "80:80"
 
@@ -15,7 +15,7 @@ services:
     restart: always
     networks:
       - My-valet
-    build: https://github.com/headStyleColorRed/my-valet-server-login.git
+    build: my-valet-server-login
     ports:
       - "8888:8888"
   login-mongo:
@@ -32,7 +32,7 @@ services:
     restart: always
     networks:
       - My-valet
-    build: https://github.com/headStyleColorRed/my-valet-server-user.git
+    build: my-valet-server-user
     ports:
       - "8889:8889"
   user-mongo:
